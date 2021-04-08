@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/vendor/all.min.css" />
+    <link rel="stylesheet" href="./css/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/vendor/swiper-bundle.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="shortcut icon" href="./images/favicon.png" />
+    <title>Jasmine & Kadi</title>
+  </head>
+
+  <body class="overflow">
+    <div class="pre-loader">
+      <div class="content">
+        <div class="flower-spinner">
+          <div class="dots-container">
+            <div class="bigger-dot">
+              <div class="smaller-dot"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav>
+      <div class="container">
+        <div class="nav-bottom">
+          <div class="nav-icons nav-icons-sm flex-center">
+            <div class="nava-btn nav-icon" id="nava-icon">
+              <div class="ico-btn">
+                <i class="fas fa-bars"></i>
+              </div>
+            </div>
+            <div class="search-btn nav-icon" id="search-btn">
+              <div class="ico-btn">
+                <i class="fas fa-search"></i>
+              </div>
+            </div>
+          </div>
+          <div class="search">
+            <div class="search-content">
+              <div class="form">
+                <div class="input-form">
+                  <input type="text" placeholder="Search..." />
+                  <button class="search-btn flex-center">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav-logo">
+            <a href="#"><img src="./images/logo.png" alt=".." /></a>
+          </div>
+          <div class="nav-icons flex-center">
+            <div class="top-setting user nav-icon">
+              <span class="setting-anchor ico-btn">
+                <i class="far fa-user"></i>
+                <div class="txt">Account</div>
+              </span>
+              <ul class="top-dropDown">
+                <li><a href="#">Sign in</a></li>
+                <li><a href="#"> Sign up</a></li>
+              </ul>
+            </div>
+            <div class="favourite nav-icon">
+              <a href="#" class="ico-btn">
+                <i class="far fa-heart"></i>
+                <div class="txt">Wishlist</div>
+              </a>
+            </div>
+            <div class="cart nav-icon">
+              <div class="ico-btn">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+            </div>
+            <div class="top-settings flex-center">
+              <div class="top-setting currency nav-icon">
+                <span class="setting-anchor ico-btn">
+                  <span class="txt">Saudi riyal</span>
+                  <i class="fas fa-caret-down down"></i>
+                </span>
+                <ul class="top-dropDown">
+                  <li><a href="#">Saudi riyal</a></li>
+                  <li><a href="#"> Egyptian Pound</a></li>
+                </ul>
+              </div>
+              <div class="top-setting nav-lang nav-icon">
+                <span class="setting-anchor ico-btn">
+                  <span class="txt">English</span>
+                  <i class="fas fa-caret-down down"></i>
+                </span>
+                <ul class="top-dropDown">
+                  <li><a href="./index.html">العربية</a></li>
+                  <li><a href="./index-en.html"> English</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nava-container">
+        <div class="container">
+          <div class="nava" id="nava">
+            <div class="nava-content">
+              <div class="nava-head">
+                <div class="top-settings flex-center">
+                  <div class="top-setting currency nav-icon">
+                    <span class="setting-anchor ico-btn">
+                      <span class="txt">Saudi riyal</span>
+                      <i class="fas fa-caret-down down"></i>
+                    </span>
+                    <ul class="top-dropDown">
+                      <li><a href="#">Saudi riyal</a></li>
+                      <li><a href="#"> Egyptian Pound</a></li>
+                    </ul>
+                  </div>
+                  <div class="top-setting nav-lang nav-icon">
+                    <span class="setting-anchor ico-btn">
+                      <span class="txt">English</span>
+                      <i class="fas fa-caret-down down"></i>
+                    </span>
+                    <ul class="top-dropDown">
+                      <li><a href="./index.html">العربية</a></li>
+                      <li><a href="./index-en.html"> English</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="nava-close" id="close-nava">
+                  <i class="fas fa-times"></i>
+                </div>
+              </div>
+              <ul>
+                <li><a href="#"> Aromatic products </a></li>
+                <li class="top-setting sm-slide slide">
+                  <a class="setting-anchor drop">
+                    Pure nature
+                    <i class="fas fa-angle-down down"></i>
+                  </a>
+                  <ul class="top-dropDown">
+                    <li><a href="#"> honey </a></li>
+                    <li><a href="#"> margarine </a></li>
+                    <li><a href="#"> sesame oil </a></li>
+                    <li><a href="#"> margarine </a></li>
+                  </ul>
+                </li>
+                <li><a href="#"> Heritage </a></li>
+                <li><a href="#"> Fruit </a></li>
+                <li><a href="#"> sweets </a></li>
+                <li><a href="#"> Sidra </a></li>
+                <li><a href="#"> Featured Shows </a></li>
+                <li><a href="#"> New Arrivals </a></li>
+                <li><a href="#"> Blog </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="search-form" id="search-form">
+      <div class="close-search" id="close-search">
+        <i class="fas fa-times"></i>
+      </div>
+      <div class="search">
+        <div class="search-content">
+          <div class="form">
+            <div class="input-form">
+              <input type="text" placeholder="Search..." />
+              <button class="search-btn flex-center">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <div class="swiper-container slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#"
+              ><img src="./images/header/header.jpg" alt="slide1 banner"
+            /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"
+              ><img src="./images/header/header.jpg" alt="slide1 banner"
+            /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"
+              ><img src="./images/header/header.jpg" alt="slide1 banner"
+            /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"
+              ><img src="./images/header/header.jpg" alt="slide1 banner"
+            /></a>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </header>
+
+    <section class="categories">
+      <div class="container">
+        <div class="categories-content">
+          <div class="categories-swiper-container s-containe">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="category">
+                  <a href="#">
+                    <div class="category-img">
+                      <img src="./images/categories/1.jpg" alt=".." />
+                    </div>
+                    <h4>Aromatic products</h4>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="category">
+                  <a href="#">
+                    <div class="category-img">
+                      <img src="./images/categories/2.jpg" alt=".." />
+                    </div>
+                    <h4>Pure nature</h4>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="category">
+                  <a href="#">
+                    <div class="category-img">
+                      <img src="./images/categories/3.jpg" alt=".." />
+                    </div>
+                    <h4>Legacies</h4>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="category">
+                  <a href="#">
+                    <div class="category-img">
+                      <img src="./images/categories/4.jpg" alt=".." />
+                    </div>
+                    <h4>Fruit</h4>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="category">
+                  <a href="#">
+                    <div class="category-img">
+                      <img src="./images/categories/5.jpg" alt=".." />
+                    </div>
+                    <h4>Candy</h4>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="category">
+                  <a href="#">
+                    <div class="category-img">
+                      <img src="./images/categories/6.jpg" alt=".." />
+                    </div>
+                    <h4>Sidra</h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="notes">
+      <div class="container">
+        <div class="s-head">
+          <h3>What defines Jasmine & Kadi?</h3>
+        </div>
+        <div class="notes-content">
+          <div class="notes-swiper-container s-containe">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="note">
+                  <a href="#">
+                    <div class="note-img">
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <h4>100% Original</h4>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="note">
+                  <a href="#">
+                    <div class="note-img">
+                      <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h4>Secure payment methods</h4>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="note">
+                  <a href="#">
+                    <div class="note-img">
+                      <i class="fas fa-users"></i>
+                    </div>
+                    <h4>Excellent service</h4>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="note">
+                  <a href="#">
+                    <div class="note-img">
+                      <i class="fas fa-truck"></i>
+                    </div>
+                    <h4>Free delivery for orders over 299 SAR</h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner-container">
+      <div class="banner-content flex-center">
+        <div class="banner">
+          <a href="#"><img src="./images/banners/1.jpg" alt=".." /></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-slider">
+      <div class="container">
+        <div class="product-head s-head">
+          <h3>BestSeller</h3>
+        </div>
+        <div class="product-body">
+          <div class="product-swiper-container s-container s-containe">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="product">
+                  <div class="product-img">
+                    <a href="#">
+                      <img src="./images/products/1.jpg" alt=".." />
+                    </a>
+                  </div>
+                  <div class="product-disc">
+                    <h5><a href="#">Product Name</a></h5>
+                    <div class="inner-disc">
+                      <div class="price flex-center">
+                        <div class="now"><span>250</span> <span>S.R</span></div>
+                        <div class="price-sale">
+                          <span>280</span><span>S.R</span>
+                        </div>
+                      </div>
+                      <div class="product-btns flex-center">
+                        <div class="like flex-center">
+                          <a href="#"><i class="far fa-heart"></i></a>
+                        </div>
+                        <div class="cart flex-center">
+                          <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product">
+                  <div class="product-img">
+                    <a href="#">
+                      <img src="./images/products/2.jpg" alt=".." />
+                    </a>
+                  </div>
+                  <div class="product-disc">
+                    <h5><a href="#">Product Name</a></h5>
+                    <div class="inner-disc">
+                      <div class="price flex-center">
+                        <div class="now"><span>250</span> <span>S.R</span></div>
+                        <div class="price-sale">
+                          <span>280</span><span>S.R</span>
+                        </div>
+                      </div>
+                      <div class="product-btns flex-center">
+                        <div class="like flex-center">
+                          <a href="#"><i class="far fa-heart"></i></a>
+                        </div>
+                        <div class="cart flex-center">
+                          <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product">
+                  <div class="product-img">
+                    <a href="#">
+                      <img src="./images/products/3.jpg" alt=".." />
+                    </a>
+                  </div>
+                  <div class="product-disc">
+                    <h5><a href="#">Product Name</a></h5>
+                    <div class="inner-disc">
+                      <div class="price flex-center">
+                        <div class="now"><span>250</span> <span>S.R</span></div>
+                        <div class="price-sale">
+                          <span>280</span><span>S.R</span>
+                        </div>
+                      </div>
+                      <div class="product-btns flex-center">
+                        <div class="like flex-center">
+                          <a href="#"><i class="far fa-heart"></i></a>
+                        </div>
+                        <div class="cart flex-center">
+                          <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product">
+                  <div class="product-img">
+                    <a href="#">
+                      <img src="./images/products/4.jpg" alt=".." />
+                    </a>
+                  </div>
+                  <div class="product-disc">
+                    <h5><a href="#">Product Name</a></h5>
+                    <div class="inner-disc">
+                      <div class="price flex-center">
+                        <div class="now"><span>250</span> <span>S.R</span></div>
+                        <div class="price-sale">
+                          <span>280</span><span>S.R</span>
+                        </div>
+                      </div>
+                      <div class="product-btns flex-center">
+                        <div class="like flex-center">
+                          <a href="#"><i class="far fa-heart"></i></a>
+                        </div>
+                        <div class="cart flex-center">
+                          <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner-container banner2">
+      <div class="container">
+        <div class="banner-content flex-center">
+          <div class="banner">
+            <a href="#"><img src="./images/banners/2.jpg" alt=".." /></a>
+          </div>
+          <div class="banner">
+            <a href="#"><img src="./images/banners/3.jpg" alt=".." /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-slider">
+      <div class="container">
+        <div class="product-head s-head">
+          <h3>New Arrivals</h3>
+          <a href="#">Show more</a>
+        </div>
+        <div class="product-body">
+          <div class="product-swiper-container s-container s-containe">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="product">
+                  <div class="product-img">
+                    <a href="#">
+                      <img src="./images/products/1.jpg" alt=".." />
+                    </a>
+                  </div>
+                  <div class="product-disc">
+                    <h5><a href="#">Product Name</a></h5>
+                    <div class="inner-disc">
+                      <div class="price flex-center">
+                        <div class="now"><span>250</span> <span>S.R</span></div>
+                        <div class="price-sale">
+                          <span>280</span><span>S.R</span>
+                        </div>
+                      </div>
+                      <div class="product-btns flex-center">
+                        <div class="like flex-center">
+                          <a href="#"><i class="far fa-heart"></i></a>
+                        </div>
+                        <div class="cart flex-center">
+                          <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product">
+                  <div class="product-img">
+                    <a href="#">
+                      <img src="./images/products/2.jpg" alt=".." />
+                    </a>
+                  </div>
+                  <div class="product-disc">
+                    <h5><a href="#">Product Name</a></h5>
+                    <div class="inner-disc">
+                      <div class="price flex-center">
+                        <div class="now"><span>250</span> <span>S.R</span></div>
+                        <div class="price-sale">
+                          <span>280</span><span>S.R</span>
+                        </div>
+                      </div>
+                      <div class="product-btns flex-center">
+                        <div class="like flex-center">
+                          <a href="#"><i class="far fa-heart"></i></a>
+                        </div>
+                        <div class="cart flex-center">
+                          <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product">
+                  <div class="product-img">
+                    <a href="#">
+                      <img src="./images/products/3.jpg" alt=".." />
+                    </a>
+                  </div>
+                  <div class="product-disc">
+                    <h5><a href="#">Product Name</a></h5>
+                    <div class="inner-disc">
+                      <div class="price flex-center">
+                        <div class="now"><span>250</span> <span>S.R</span></div>
+                        <div class="price-sale">
+                          <span>280</span><span>S.R</span>
+                        </div>
+                      </div>
+                      <div class="product-btns flex-center">
+                        <div class="like flex-center">
+                          <a href="#"><i class="far fa-heart"></i></a>
+                        </div>
+                        <div class="cart flex-center">
+                          <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product">
+                  <div class="product-img">
+                    <a href="#">
+                      <img src="./images/products/4.jpg" alt=".." />
+                    </a>
+                  </div>
+                  <div class="product-disc">
+                    <h5><a href="#">Product Name</a></h5>
+                    <div class="inner-disc">
+                      <div class="price flex-center">
+                        <div class="now"><span>250</span> <span>S.R</span></div>
+                        <div class="price-sale">
+                          <span>280</span><span>S.R</span>
+                        </div>
+                      </div>
+                      <div class="product-btns flex-center">
+                        <div class="like flex-center">
+                          <a href="#"><i class="far fa-heart"></i></a>
+                        </div>
+                        <div class="cart flex-center">
+                          <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="news">
+      <div class="container">
+        <div class="news-head s-head">
+          <h3>Blog</h3>
+          <a href="#">Show more</a>
+        </div>
+        <div class="news-content">
+          <div class="news-swiper-container s-containe">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="news-item">
+                  <div class="news-img">
+                    <a href="#">
+                      <img src="./images/news.jpg" alt=".." />
+                    </a>
+                  </div>
+                  <div class="news-body">
+                    <h3>
+                      <a href="#">
+                        Contrary to popular belief, Lorem is not random
+                      </a>
+                    </h3>
+                    <p>
+                      Contrary to popular belief, Lorem Ipsum is not a random
+                      text, It even has roots in Latin literature from the year
+                      45
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="news-item">
+                  <div class="news-img">
+                    <a href="#">
+                      <img src="./images/news.jpg" alt=".." />
+                    </a>
+                  </div>
+                  <div class="news-body">
+                    <h3>
+                      <a href="#">
+                        Contrary to popular belief, Lorem is not random</a
+                      >
+                    </h3>
+                    <p>
+                      Contrary to popular belief, Lorem Ipsum is not a random
+                      text, It even has roots in Latin literature from the year
+                      45
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="news-item">
+                  <div class="news-img">
+                    <a href="#">
+                      <img src="./images/news.jpg" alt=".." />
+                    </a>
+                  </div>
+                  <div class="news-body">
+                    <h3>
+                      <a href="#">
+                        Contrary to popular belief, Lorem is not random</a
+                      >
+                    </h3>
+                    <p>
+                      Contrary to popular belief, Lorem Ipsum is not a random
+                      text, It even has roots in Latin literature from the year
+                      45
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="comments">
+      <div class="container">
+        <div class="comments-head s-head">
+          <h3>Customer Reviews</h3>
+        </div>
+        <div class="comments-content">
+          <div class="comments-swiper-container s-containe">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="comment">
+                  <div class="comment-img">
+                    <a href="#">
+                      <i class="fas fa-user-circle"></i>
+                    </a>
+                  </div>
+                  <div class="comment-body">
+                    <h3>
+                      <a href="#"> Nayef Al-Otaibi </a>
+                    </h3>
+                    <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star blank"></i>
+                    </div>
+                    <p>
+                      Contrary to popular belief, Lorem Ipsum is not a random
+                      text, Rather, it has roots in classical Latin literature
+                      from the year 45 B.C. Birth
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="comment">
+                  <div class="comment-img">
+                    <a href="#">
+                      <img src="./images/icons/user.png" alt=".." />
+                    </a>
+                  </div>
+                  <div class="comment-body">
+                    <h3>
+                      <a href="#"> Nayef Al-Otaibi </a>
+                    </h3>
+                    <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star blank"></i>
+                    </div>
+                    <p>
+                      Contrary to popular belief, Lorem Ipsum is not a random
+                      text, Rather, it has roots in classical Latin literature
+                      from the year 45 B.C. Birth
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-top">
+          <div
+            class="info footer-list"
+            data-target="#collapse1"
+            aria-expanded="false"
+            aria-controls="collapse1"
+          >
+            <div class="head">
+              <h4>Information <i class="fas fa-angle-down down"> </i></h4>
+            </div>
+            <ul id="collapse1">
+              <li><a href="#"> About us </a></li>
+              <li><a href="#"> Employment </a></li>
+              <li><a href="#"> Terms and Conditions </a></li>
+              <li><a href="#"> Frequently asked questions </a></li>
+            </ul>
+          </div>
+          <div
+            class="adds footer-list"
+            data-target="#collapse2"
+            aria-expanded="false"
+            aria-controls="collapse2"
+          >
+            <div class="head">
+              <h4>Addons <i class="fas fa-angle-down down"> </i></h4>
+            </div>
+            <ul id="collapse2">
+              <li><a href="#"> companies </a></li>
+              <li><a href="#"> Gift vouchers </a></li>
+              <li><a href="#"> commission system </a></li>
+              <li><a href="#"> Featured Shows </a></li>
+            </ul>
+          </div>
+          <div
+            class="cust footer-list"
+            data-target="#collapse3"
+            aria-expanded="false"
+            aria-controls="collapse3"
+          >
+            <div class="head">
+              <h4>Customer Service <i class="fas fa-angle-down down"> </i></h4>
+            </div>
+            <ul id="collapse3">
+              <li><a href="#"> Contact us </a></li>
+              <li><a href="#"> Return request </a></li>
+              <li><a href="#"> Site map </a></li>
+            </ul>
+          </div>
+          <div
+            class="account footer-list"
+            data-target="#collapse4"
+            aria-expanded="false"
+            aria-controls="collapse4"
+          >
+            <div class="head">
+              <h4>Account <i class="fas fa-angle-down down"> </i></h4>
+            </div>
+            <ul id="collapse4">
+              <li><a href="#"> Account </a></li>
+              <li><a href="#"> Orders </a></li>
+              <li><a href="#"> Wishlist </a></li>
+              <li><a href="#"> NewsLitter </a></li>
+              <li><a href="#"> Cart </a></li>
+            </ul>
+          </div>
+          <div class="mail">
+            <div class="head">
+              <h4>Newsletter</h4>
+            </div>
+            <p>
+              Subscribe to the newsletter to receive new offers and products.
+            </p>
+            <form action="#">
+              <div class="input-form">
+                <input type="text" placeholder="Enter your Email" />
+                <button class="search-btn flex-center">
+                  <i class="fas fa-check"></i>
+                </button>
+              </div>
+            </form>
+            <div class="social">
+              <div class="social-content flex-center">
+                <div class="social-icon whats">
+                  <a class="flex-center" href="#">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </div>
+                <div class="social-icon facebook">
+                  <a class="flex-center" href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </div>
+                <div class="social-icon snap">
+                  <a class="flex-center" href="#">
+                    <i class="fab fa-snapchat-ghost"></i>
+                  </a>
+                </div>
+                <div class="social-icon insta">
+                  <a class="flex-center" href="#">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </div>
+                <div class="social-icon twitter">
+                  <a class="flex-center" href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="call">standard number <span>92000000</span></div>
+          </div>
+        </div>
+        <div class="credit">
+          <p> &copy; All rights reserved, Full & Cady 2020 </p>
+                    <p class="dash">-</p>
+          <p>
+            Design & Development
+            <a href="https://tasawk.com.sa/" target="_blank"
+              ><img src="./images/icons/footer-en.png" alt=".."
+            /></a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="payment">
+      <div class="container">
+        <img src="./images/icons/pay.png" alt=".." />
+      </div>
+    </div>
+
+    <div
+      id="up"
+      class="up flex-center"
+      onclick="window.scroll({top: 0,behavior: 'smooth'});"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script src="./js/vendor/jquery.min.js"></script>
+    <script src="./js/vendor/bootstrap.min.js"></script>
+    <script src="./js/vendor/swiper-bundle.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
