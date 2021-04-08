@@ -500,6 +500,20 @@ nav {
                 position: relative;
                 cursor: pointer;
 
+                .num {
+                    height: 22px;
+                    width: 22px;
+                    background-color: $color1;
+                    border: 2px solid white;
+                    border-radius: 100%;
+                    color: white;
+                    font-size: 12px;
+                    position: absolute;
+                    top: -5px;
+                    right: -5px;
+                    z-index: 2;
+                }
+
                 .ico-btn {
                     color: white;
                     z-index: 1;
@@ -525,6 +539,10 @@ nav {
 
                     .ico-btn {
                         color: white;
+                    }
+
+                    .num {
+                        animation: vibe 0.7s ease-in-out;
                     }
                 }
             }
@@ -1782,16 +1800,16 @@ html[dir="ltr"] {
 @keyframes vibe {
     0%,
     100% {
-        transform: rotate(0);
+        transform: translateY(0);
     }
     25% {
-        transform: rotate(-10deg);
+        transform: translateY(-5px);
     }
     50% {
-        transform: rotate(10deg);
+        transform: translateY(5px);
     }
     75% {
-        transform: rotate(-10deg);
+        transform: translateY(-5px);
     }
 }
 

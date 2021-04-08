@@ -608,6 +608,20 @@ nav .nav-bottom .nav-icons .cart {
   cursor: pointer;
 }
 
+nav .nav-bottom .nav-icons .cart .num {
+  height: 22px;
+  width: 22px;
+  background-color: #1c4482;
+  border: 2px solid white;
+  border-radius: 100%;
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  z-index: 2;
+}
+
 nav .nav-bottom .nav-icons .cart .ico-btn {
   color: white;
   z-index: 1;
@@ -632,6 +646,10 @@ nav .nav-bottom .nav-icons .cart:hover:after {
 
 nav .nav-bottom .nav-icons .cart:hover .ico-btn {
   color: white;
+}
+
+nav .nav-bottom .nav-icons .cart:hover .num {
+  animation: vibe 0.7s ease-in-out;
 }
 
 nav .nav-bottom .nav-icons .nava-btn,
@@ -1867,16 +1885,16 @@ html[dir="ltr"] footer .footer-top ul li:hover {
 @keyframes vibe {
   0%,
   100% {
-    transform: rotate(0);
+    transform: translateY(0);
   }
   25% {
-    transform: rotate(-10deg);
+    transform: translateY(-5px);
   }
   50% {
-    transform: rotate(10deg);
+    transform: translateY(5px);
   }
   75% {
-    transform: rotate(-10deg);
+    transform: translateY(-5px);
   }
 }
 
