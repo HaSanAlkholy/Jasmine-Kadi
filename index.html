@@ -27,18 +27,6 @@
     <nav>
       <div class="container">
         <div class="nav-bottom">
-          <div class="nav-icons nav-icons-sm flex-center">
-            <div class="nava-btn nav-icon" id="nava-icon">
-              <div class="ico-btn">
-                <i class="fas fa-bars"></i>
-              </div>
-            </div>
-            <div class="search-btn nav-icon" id="search-btn">
-              <div class="ico-btn">
-                <i class="fas fa-search"></i>
-              </div>
-            </div>
-          </div>
           <div class="search">
             <div class="search-content">
               <div class="form">
@@ -54,52 +42,60 @@
           <div class="nav-logo">
             <a href="#"><img src="./images/logo.png" alt=".." /></a>
           </div>
-          <div class="nav-icons flex-center">
-            <div class="top-setting user nav-icon">
-              <span class="setting-anchor ico-btn">
-                <i class="far fa-user"></i>
-                <div class="txt">حسابي</div>
-              </span>
+          <ul class="nav-icons flex-center">
+            <li class="nava-btn nav-icon" id="nava-icon">
+              <div class="ico-btn">
+                <i class="fas fa-bars"></i>
+              </div>
+            </li>
+            <li class="top-setting sm-slide user slide sm-link nav-icon">
+              <a class="setting-anchor drop ico-btn">
+                <i class="far fa-user ico"></i>
+                <span class="txt">حسابى</span>
+                <i class="fas fa-angle-down down"></i>
+              </a>
               <ul class="top-dropDown">
                 <li><a href="#">تسجيل الدخول</a></li>
-                <li><a href="#"> تسجيل جديد</a></li>
+                <li><a href="#">تسجيل جديد</a></li>
               </ul>
-            </div>
-            <div class="favourite nav-icon">
+            </li>
+            <li class="favourite nav-icon">
               <a href="#" class="ico-btn">
                 <i class="far fa-heart"></i>
                 <div class="txt">قائمة رغباتي</div>
               </a>
-            </div>
-            <div class="cart nav-icon">
+            </li>
+            <li class="cart nav-icon">
               <div class="ico-btn">
                 <i class="fas fa-shopping-cart"></i>
               </div>
               <div class="num flex-center">0</div>
-            </div>
-            <div class="top-settings flex-center">
-              <div class="top-setting currency nav-icon">
-                <span class="setting-anchor ico-btn">
-                  <span class="txt">الريال السعودي</span>
-                  <i class="fas fa-caret-down down"></i>
-                </span>
-                <ul class="top-dropDown">
-                  <li><a href="#">الريال السعودي</a></li>
-                  <li><a href="#"> جنية مصرى</a></li>
-                </ul>
-              </div>
-              <div class="top-setting nav-lang nav-icon">
-                <span class="setting-anchor ico-btn">
-                  <span class="txt">العربية</span>
-                  <i class="fas fa-caret-down down"></i>
-                </span>
-                <ul class="top-dropDown">
-                  <li><a href="./index.html">العربية</a></li>
-                  <li><a href="./index-en.html"> English</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
+            </li>
+            <li>
+              <ul class="top-settings flex-center">
+                <li class="top-setting sm-slide slide sm-link nav-icon currency">
+                  <a class="setting-anchor drop ico-btn">
+                    <span class="txt">الريال السعودي</span>
+                    <i class="fas fa-angle-down down"></i>
+                  </a>
+                  <ul class="top-dropDown">
+                    <li><a href="#">الريال السعودي</a></li>
+                    <li><a href="#">الجنية المصرى</a></li>
+                  </ul>
+                </li>
+                <li class="top-setting sm-slide slide sm-link nav-icon nav-lang">
+                  <a class="setting-anchor drop ico-btn">
+                    <span class="txt">العربية</span>
+                    <i class="fas fa-angle-down down"></i>
+                  </a>
+                  <ul class="top-dropDown">
+                    <li><a href="./index.html">العربية</a></li>
+                    <li><a href="./index-en.html">English</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
       <div class="nava-container">
@@ -107,33 +103,22 @@
           <div class="nava" id="nava">
             <div class="nava-content">
               <div class="nava-head">
-                <div class="top-settings flex-center">
-                  <div class="top-setting currency nav-icon">
-                    <span class="setting-anchor ico-btn">
-                      <span class="txt">الريال السعودي</span>
-                      <i class="fas fa-caret-down down"></i>
-                    </span>
-                    <ul class="top-dropDown">
-                      <li><a href="#">الريال السعودي</a></li>
-                      <li><a href="#"> جنية مصرى</a></li>
-                    </ul>
-                  </div>
-                  <div class="top-setting nav-lang nav-icon">
-                    <span class="setting-anchor ico-btn">
-                      <span class="txt">العربية</span>
-                      <i class="fas fa-caret-down down"></i>
-                    </span>
-                    <ul class="top-dropDown">
-                      <li><a href="./index.html">العربية</a></li>
-                      <li><a href="./index-en.html"> English</a></li>
-                    </ul>
-                  </div>
-                </div>
                 <div class="nava-close" id="close-nava">
                   <i class="fas fa-times"></i>
                 </div>
               </div>
               <ul>
+                <li class="top-setting sm-slide user slide sm-link nav-icon">
+                  <a class="setting-anchor drop ico-btn">
+                    <i class="far fa-user ico"></i>
+                    <span class="txt">حسابى</span>
+                    <i class="fas fa-angle-down down"></i>
+                  </a>
+                  <ul class="top-dropDown">
+                    <li><a href="#">تسجيل الدخول</a></li>
+                    <li><a href="#">تسجيل جديد</a></li>
+                  </ul>
+                </li>
                 <li><a href="#"> منتجات عطرية </a></li>
                 <li class="top-setting sm-slide slide">
                   <a class="setting-anchor drop">
@@ -153,30 +138,32 @@
                 <li><a href="#">العروض المميزة</a></li>
                 <li><a href="#">وصل حديثا </a></li>
                 <li><a href="#">المدونة </a></li>
+                <li class="top-setting sm-slide slide sm-link nav-icon currency">
+                  <a class="setting-anchor drop ico-btn">
+                    <span class="txt">الريال السعودي</span>
+                    <i class="fas fa-angle-down down"></i>
+                  </a>
+                  <ul class="top-dropDown">
+                    <li><a href="#">الريال السعودي</a></li>
+                    <li><a href="#">الجنية المصرى</a></li>
+                  </ul>
+                </li>
+                <li class="top-setting sm-slide slide sm-link nav-icon nav-lang">
+                  <a class="setting-anchor drop ico-btn">
+                    <span class="txt">العربية</span>
+                    <i class="fas fa-angle-down down"></i>
+                  </a>
+                  <ul class="top-dropDown">
+                    <li><a href="./index.html">العربية</a></li>
+                    <li><a href="./index-en.html">English</a></li>
+                  </ul>
+                </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
     </nav>
-
-    <div class="search-form" id="search-form">
-      <div class="close-search" id="close-search">
-        <i class="fas fa-times"></i>
-      </div>
-      <div class="search">
-        <div class="search-content">
-          <div class="form">
-            <div class="input-form">
-              <input type="text" placeholder="ابحث عن ما تريد..." />
-              <button class="search-btn flex-center">
-                <i class="fas fa-search"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <header>
       <div class="swiper-container slider">
@@ -744,7 +731,7 @@
                 <div class="comment">
                   <div class="comment-img">
                     <a href="#">
-                      <img src="./images/icons/user.png" alt="..">
+                      <img src="./images/icons/user.png" alt=".." />
                     </a>
                   </div>
                   <div class="comment-body">
@@ -886,12 +873,12 @@
                 </div>
               </div>
             </div>
-            <div class="call">الرقم الموحد <span>92000000</span> </div>
+            <div class="call">الرقم الموحد <span>92000000</span></div>
           </div>
         </div>
         <div class="credit">
-          <p> &copy; جميع الحقوق محفوظة، فُل وكاّدي 2020 </p>
-          <p class="dash"> - </p>
+          <p>&copy; جميع الحقوق محفوظة، فُل وكاّدي 2020</p>
+          <p class="dash">-</p>
           <p>
             تصميم وتطوير
             <a href="https://tasawk.com.sa/" target="_blank"

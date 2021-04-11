@@ -27,23 +27,6 @@ $(window).on("load", function () {
     }
   });
 
-  //search toggle
-  $("#search-btn").click(function (e) {
-    $("#search-form").toggleClass("search-form-active");
-    $("html").toggleClass("overflow");
-  });
-
-  $("#search-form").click(function (e) {
-    if (
-      e.target.id == "search-form" ||
-      e.target.id == "close-search" ||
-      e.target.parentNode.id == "close-search"
-    ) {
-      $(this).removeClass("search-form-active");
-      $("html").removeClass("overflow");
-    }
-  });
-
   $(".slide").on("click", function (e) {
     if (
       (e.target.classList.contains("drop") &&
@@ -57,7 +40,7 @@ $(window).on("load", function () {
   });
 
   function changeSlide() {
-    if (window.innerWidth <= 992) {
+    if (window.innerWidth <= 1200) {
       $(".sm-slide").removeClass("top-setting");
       $(".sm-slide").addClass("slide");
       $(".sm-slide .top-dropDown").css("display", "none");
