@@ -1,5 +1,4 @@
 $(window).on("load", function () {
-
   //preloader
   $(".pre-loader").fadeOut("500", function () {
     $("body").removeClass("overflow");
@@ -31,7 +30,8 @@ $(window).on("load", function () {
     if (
       (e.target.classList.contains("drop") &&
         e.target.parentNode.classList.contains("slide")) ||
-      e.target.classList.contains("slide")
+      e.target.classList.contains("slide") ||
+      e.target.classList.contains("txt")
     ) {
       e.stopPropagation();
       $(this).toggleClass("slide-active");
