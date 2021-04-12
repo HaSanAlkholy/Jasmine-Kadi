@@ -29,7 +29,7 @@ $(window).on("load", function () {
   $(".slide").on("click", function (e) {
     if (
       (e.target.classList.contains("drop") &&
-        e.target.parentNode.classList.contains("slide")) ||
+      e.target.parentNode.classList.contains("slide")) ||
       e.target.classList.contains("slide") ||
       e.target.classList.contains("txt")
     ) {
